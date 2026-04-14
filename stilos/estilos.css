@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a3d; /* Azul oscuro base */
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Navbar con efecto transparente */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    background: rgba(26, 26, 61, 0.9);
+    z-index: 1000;
+}
+
+.logo { font-size: 1.8rem; font-weight: 700; }
+.logo span { color: #4da3ff; }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 0.85rem;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+nav a.active {
+    background: #3a38a3;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Sección Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    min-height: 80vh;
+}
+
+.main-title { font-size: 4rem; margin-bottom: 10px; }
+.main-title span { color: #4da3ff; }
+
+.btn-main {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Sección de Tarjetas (Como funcionamos) */
+.how-it-works {
+    padding: 80px 8%;
+    text-align: center;
+    background: linear-gradient(180deg, #1a1a3d, #2c2a7d);
+}
+
+.section-title { margin-bottom: 50px; font-size: 2rem; }
+
+.grid-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px 20px;
+    border-radius: 20px;
+    width: 320px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover { transform: translateY(-10px); }
+
+.card.middle { background: #4e4bbd; } /* Resalta la del medio */
+
+.card img { width: 100px; margin-top: 20px; }
+
+/* Sección Informativa (Elegirnos / Objetivo) */
+.info-section {
+    display: flex;
+    align-items: center;
+    padding: 100px 8%;
+    gap: 60px;
+}
+
+.info-text h2 { font-size: 3rem; line-height: 1.1; }
+.info-text span { color: #4da3ff; }
+.info-text p { margin-top: 20px; color: #ccc; line-height: 1.6; }
+
+.info-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-logo {
+    height: 50px; /* Ajusta este valor según qué tan grande quieras el logo */
+    width: auto;  /* Esto mantiene la proporción de la imagen */
+    display: block;
+    object-fit: contain;
+}
+
+/* Ajuste opcional para la Navbar si el logo queda muy pegado */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background: rgba(26, 26, 61, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
