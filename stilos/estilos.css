@@ -36,11 +36,6 @@ nav a {
     transition: 0.3s;
 }
 
-nav a.active {
-    background: #3a38a3;
-    padding: 8px 15px;
-    border-radius: 5px;
-}
 
 /* Sección Hero */
 .hero {
@@ -134,4 +129,27 @@ nav a.active {
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+.main-footer {
+    background-color: #13132b;
+    padding: 40px 8%;
+    margin-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.8rem;
+}
+
+.footer-links a:hover {
+    color: #4da3ff;
 }
